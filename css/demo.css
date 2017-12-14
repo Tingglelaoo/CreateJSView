@@ -1,0 +1,33 @@
+/*filename=demo.css*/
+@charset "UTF-8";
+/* stylelint-disable */
+/* function_v2 no need to  check */
+/* stylelint-enable */
+/*
+ * @author: tingglelaoo
+ * @time: 2017-8-30
+*/
+html {
+  font-size: 20px;
+  font-size: 5.33333vw;
+}
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 17.06667px;
+  }
+}
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 28.8px;
+  }
+}
+
+body {
+  max-width: none;
+  min-width: auto;
+}
+
+html, body, .wrapper {
+  height: 100%;
+  overflow: hidden;
+}
