@@ -111,6 +111,14 @@
             (typeof item.right == "number") && (item.x = self.stageWidth - item.getBounds().width - item.right  - cutSizeX);
         });
     },
+    /**
+     * 设置缩放适配模式
+     * @param stage {obj} 舞台对象
+     * @param designWidth {number} 设计稿宽度
+     * @param designHeight {number} 设计稿高度
+     * @param mode {obj} 内置五种缩放适配模式之一，如createjs.view.CONTAIN
+     * @param resizeCallback resize回调函数
+     */
     setViewMode: function(stage, designWidth, designHeight, mode, resizeCallback){
         var self = this;
         self.stage = stage;
@@ -127,6 +135,10 @@
         }
         window.onresize = resizeHandler;
     },
+    /**
+     * 重绘制：对依据舞台大小为标准的全屏元素进行大小在切换横屏时进行重绘制
+     * @param item {displayObject} 需要重绘制的对象
+     */
     adjustFullSize: function(item){
         if(!item) {return;}
         var self = this;
@@ -135,6 +147,10 @@
         }
         self._adjustFullSize();
     },
+    /**
+     * 重定位：对舞台贴边元素进行位置的重定位
+     * @param item {displayObject} 需要重定位的对象
+     */
     adjustPosition: function(item){
         if(!item) {return;}
         var self = this;
