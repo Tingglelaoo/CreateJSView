@@ -1,32 +1,32 @@
 # CreateJSView
-基于CreateJS框架的H5轻互动游戏的横屏适配插件
----
+> 基于CreateJS框架的H5轻互动游戏的横屏适配插件
+
 ## 实现原理
 前往阅读文章[《H5游戏开发：横屏适配》](https://aotu.io/notes/2017/10/18/landscape_mode_in_html5_game/)
 
 
 ## API
-###1. `createjs.view.CONTAIN`
+### 1. `createjs.view.CONTAIN`
 内置的 CONTAIN 模式
 
 
-###2. `createjs.view.COVER`
+### 2. `createjs.view.COVER`
 内置的 COVER 模式
 
 
-###3. `createjs.view.FILL`
+### 3. `createjs.view.FILL`
 内置的 FILL 模式
 
 
-###4. `createjs.view.FIXED_WIDTH`
+### 4. `createjs.view.FIXED_WIDTH`
 内置的 FIXED_WIDTH 模式
 
 
-###5. `createjs.view.FIXED_HEIGHT`
+### 5. `createjs.view.FIXED_HEIGHT`
 内置的 FIXED_HEIGHT 模式
 
 
-###6. `createjs.view.setViewMode`
+### 6. `createjs.view.setViewMode`
 > createjs.view.setViewMode( stage, designWidth, designHeight, mode, resizeCallback )
 
 参数:
@@ -44,8 +44,7 @@ createjs.view.setViewMode(stage, designWidth, designHeight, createjs.view.CONTAI
 })
 ```
 
-
-###7. `createjs.view.adjustFullSize`
+### 7. `createjs.view.adjustFullSize`
 > createjs.view.adjustFullSize( item )
 
 参数:
@@ -61,7 +60,7 @@ createjs.view.adjustFullSize(shape.graphics);
 ```
 
 
-###8. `createjs.view.adjustPosition`
+### 8. `createjs.view.adjustPosition`
 > createjs.view.adjustPosition( item )
 
 参数:
