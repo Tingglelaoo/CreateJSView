@@ -1,0 +1,2 @@
+# CreateJSView
+基于CreateJS框架的H5轻互动游戏的横屏适配插件
