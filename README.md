@@ -29,6 +29,8 @@
 ### 6. `createjs.view.setViewMode`
 > createjs.view.setViewMode( stage, designWidth, designHeight, mode, resizeCallback )
 
+为舞台设置合适的缩放适配模式，用于在横屏游戏场景进行横屏适配。
+
 参数:
 - stage {obj} 舞台对象
 - designWidth {number} 设计稿宽度
@@ -47,6 +49,8 @@ createjs.view.setViewMode(stage, designWidth, designHeight, createjs.view.CONTAI
 ### 7. `createjs.view.adjustFullSize`
 > createjs.view.adjustFullSize( item )
 
+用于重绘制那些以舞台区域宽高大小作为其大小设置的参考标准的全屏类元素，避免留空情况。
+
 参数:
 - item {displayObject} 需要被重绘制的对象
 
@@ -62,6 +66,8 @@ createjs.view.adjustFullSize(shape.graphics);
 
 ### 8. `createjs.view.adjustPosition`
 > createjs.view.adjustPosition( item )
+
+用于重定位舞台贴边元素，避免被裁剪的情况。
 
 参数:
 - item {displayObject} 需要被重定位的对象
